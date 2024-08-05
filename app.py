@@ -42,11 +42,11 @@ COMMON_STYLE ={
 
 # PATHS
 BASE_PATH = pathlib.Path(__file__).parent.resolve()
-ART_PATH = BASE_PATH.joinpath("artifacts").resolve()
+#ART_PATH = BASE_PATH.joinpath("artifacts").resolve()
 
 
 # DATA
-Churn_data = pd.read_pickle(ART_PATH.joinpath('/Users/ellandalla/Desktop/Customer_Churn_Analysis/Prediction_Data/churn_prediction_df.pkl'))
+Churn_data = pd.read_pickle('/Users/ellandalla/Desktop/Customer_Churn_Analysis/Prediction_Data/churn_prediction_df.pkl')
 
 Churn_data.rename(columns ={'Churn': "Actual_Churn", 
                             'predict':"Predicted_Churn",
