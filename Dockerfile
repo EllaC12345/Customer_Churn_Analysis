@@ -1,6 +1,7 @@
-FROM python: 3.11.9
+FROM python:3.11.9
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-EXPOSE $ port
-CMD gunicorn --workers=4 --bind 0.0.0.0:$port app:app
+EXPOSE $port
+# Run gunicorn server
+CMD ["gunicorn", "--workers=4", "--bind", "0.0.0.0:$PORT", "app:app"]
