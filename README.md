@@ -1,6 +1,6 @@
-### Customer Churn Analysis
+## Customer Churn Analysis
 
-## Software And Tools Requirements
+### Software And Tools Requirements
 
 1. [Github Account] (https://github.com/)
 2. [Heroku Account] (https://www.heroku.com/)
