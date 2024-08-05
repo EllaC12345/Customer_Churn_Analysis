@@ -90,7 +90,7 @@ figure_3 = dbc.Row(
 
 Recommendation_title = dbc.Row(
     dbc.Col([
-        html.H2("Conclusion and Recommendations", className="text-center"),
+        html.H3("Conclusion and Recommendations", className="text-center"),
     ])
 )
 
@@ -127,7 +127,7 @@ Accordion = dbc.Row(
 
 button = dbc.Row(
     dbc.Col([
-        html.P("Download the strategy to optimize retention for customers who are more likely than not to churn.", style = COMMON_STYLE),
+        html.P("Download the strategy to optimize retention of customers who are more likely than not to churn.", style = COMMON_STYLE),
         dbc.Button("Strategy", id="btn", color="primary", style = COMMON_STYLE, ),
         dcc.Download(id="download"),
     ],
