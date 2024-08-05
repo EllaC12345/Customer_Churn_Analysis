@@ -46,7 +46,7 @@ ART_PATH = BASE_PATH.joinpath("artifacts").resolve()
 
 
 # DATA
-Churn_data = pd.read_pickle(ART_PATH.joinpath('/Users/ellandalla/Desktop/Customer_Churn_Analysis-/venv/Data/churn_prediction_df.pkl'))
+Churn_data = pd.read_pickle(ART_PATH.joinpath('/Users/ellandalla/Desktop/Customer_Churn_Analysis/Prediction_Data/churn_prediction_df.pkl'))
 
 Churn_data.rename(columns ={'Churn': "Actual_Churn", 
                             'predict':"Predicted_Churn",
@@ -300,7 +300,7 @@ def update_categorical_drivers(input_id_2):
 def download_strategy(n_clicks):
     if n_clicks is None:
         raise PreventUpdate
-    return dcc.send_file("/Users/ellandalla/Desktop/Customer_Churn_Analysis-/venv/Data/recommendation.csv")
+    return dcc.send_file("/Users/ellandalla/Desktop/Customer_Churn_Analysis/Prediction_Data/recommendation.csv")
 if __name__ == '__main__':
     app.run_server(debug=True)
 
